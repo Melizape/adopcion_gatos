@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Mi primera web de Codo a Codo</title>
+</head>
+<body>
+    <header>   
+        <nav class="navigator">
+            <a class="btn" href="index.html">Inicio</a>
+            <a class="btn" href="about.html">Acerca de nosotros</a>
+            <a class="btn" href="contact.html">Adoptá</a>
+            <a class="btn" href="donate.html">Doná</a>
+            <a class="btn" href="awarenes.html">Conciencia</a>   
+        </nav> 
+        <h1>Adopción Gatos Córdoba</h1>   
+    </header>
+    <div>
+        <h2>Adoptá u ofrecete como provisorio</h2>
+        <form action="mailto:melina.zappegno@gmail.com" target="_self" method="GET" data-netlify="true">
+            <label for="name">Nombre y apellido*:</label><br>
+            <input type="text" id="name" name="name" maxlength=50 required><br>
+            <label for="telefonenumber">Numero de telefono*:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="351-2222222" pattern="[0-9]{3}-[0-9]{7}" required><br>
+            <p>Estas interesado en:</p>
+            <input type="radio" id="adoptar" name="select" value="adoptar">
+            <label for="adoptar">Adoptar</label><br>
+            <input type="radio" id="provi" name="select" value="provi">
+            <label for="provi">Ser Provisorio</label><br>
+            <p>Preferencias: (Selecciona una o mas)</p>
+            <input type="checkbox" id="macho" name="gender" value="macho">
+            <label for="macho">Macho</label><br>
+            <input type="checkbox" id="hembra" name="gender" value="hembra">
+            <label for="hembra">Hembra</label><br>
+            <input type="checkbox" id="gat@Adulto" name="age" value="gat@Adulto">
+            <label for="gat@Adulto">Gat@ Adulto</label><br>
+            <input type="checkbox" id="gat@Pequeño" name="age" value="gat@Pequeño">
+            <label for="gat@Pequeño">Gat@ Pequeño</label><br>
+            <input type="checkbox" id="lactantes" name="age" value="lactantes">
+            <label for="lactantes">Lactantes</label><br>
+            <input type="checkbox" id="preñada" name="preferencias" value="preñada">
+            <label for="preñada">Gata Preñada</label><br>
+            <input type="checkbox" id="indiferente" name="preferencias" value="indiferente">
+            <label for="indiferente">Indiferente</label>
+            <br><br>
+            <p>Tienes gatos propios?</p>
+            <input type="radio" id="si" name="sino" value="si">
+            <label for="Si">Si</label><br>
+            <input type="radio" id="no" name="sino" value="no">
+            <label for="no">No</label><br>
+            <label for="cantGatos">Cuantos?:</label>
+            <input type="number" id="cantGatos" name="cant"><br>
+            <br>
+            <label for="residencia">Vives en:</label>
+            <select name="residencia" id="tipoDeResidencia">
+                <option value="casa">Casa</option>
+                <option value="departamento">Departamento</option><br>
+            </select>
+            <br>
+            <p>Hacenos saber cualquier otra especificacion o consulta a continuación:</p>
+            <textarea name="message" rows="10" cols="30">...</textarea>
+            <br><br>
+            <input class="btn" type="submit" value="send">
+             
+        </form>
+        <p> Envianos cualquier sugerencia a nuestro correo: <a href="melina.zappegno@gmail.com">adopciongatoscordoba@gmail.com</a></p>
+    </div>
+    <footer>
+        <p><strong>Seguinos en nuestras redes y compartí.</strong></p> 
+        <a class="btn-footer" href="https://www.instagram.com/adopciongatoscordoba/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a class="btn-footer" href="http://www.facebook.com/gatoscordoba" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <br>
+        <p>Derechos reservados @2020 - Melina Zappegno para Curso de desarrollo Full Stack Codo a Codo</p>
+        <br>
+    </footer>        
+</body>
+</html>
